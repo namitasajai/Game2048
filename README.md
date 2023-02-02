@@ -12,7 +12,7 @@ Game 2048
 
   4. File I/O: File I/O is used to save the game state in order for a user to leave the game and return to it later. The file will be deleted once the game is complete. The file is supposed to save the board and score history so the undo button continues to work.
 
-##Implementation
+## Implementation
 
 InstructionPanel: This class holds the JPanel pop-up window that appears when the game is first instantiated.
 
@@ -30,9 +30,10 @@ GameWon: This is a pop up window that is displayed when a user has won the game.
 
 Run2048: This file runs the game by compiling each component into a JFrame, allowing for user interaction.
 
-##External Resources
+## External Resources
 
 None
 
-##Contact Information
+## Contact Information
+
 Created by Namita Sajai, 2021
