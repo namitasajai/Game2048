@@ -2,6 +2,12 @@
 Game 2048
 ---
 
+<img width="300" alt="Instruction Window" src="https://user-images.githubusercontent.com/122184153/216217625-456aafbc-7c78-43ee-9771-8ba2bd44cd59.png">
+<img width="300" alt="Game 2048" src="https://user-images.githubusercontent.com/122184153/216217699-f22c0686-24e3-410e-8c36-7001388b03d2.png">
+
+## Description
+Game of 2048 constructed using JavaSwing GUI. 
+
 ## Core Concepts
 
   1. 2D Arrays: I used 2D arrays to hold the game board for 2048 as well as paint it in my repaint() method. The array is updated after each move is made while the previous board is held in a collection. This implementation of 2D arrays is appropriate since 2D arrays are mutable in place so changes can be made when moves are made in place.
