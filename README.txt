@@ -1,15 +1,8 @@
-=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
-CIS 1200 Game Project README
-PennKey: 45123620
-=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
+---
+Game 2048
+---
 
-===================
-=: Core Concepts :=
-===================
-
-- List the four core concepts, the features they implement, and why each feature
-  is an appropriate use of the concept. Incorporate the feedback you got after
-  submitting your proposal.
+## Core Concepts
 
   1. 2D Arrays: I used 2D arrays to hold the game board for 2048 as well as paint it in my repaint() method. The array is updated after each move is made while the previous board is held in a collection. This implementation of 2D arrays is appropriate since 2D arrays are mutable in place so changes can be made when moves are made in place.
 
@@ -19,12 +12,7 @@ PennKey: 45123620
 
   4. File I/O: File I/O is used to save the game state in order for a user to leave the game and return to it later. The file will be deleted once the game is complete. The file is supposed to save the board and score history so the undo button continues to work.
 
-=========================
-=: Your Implementation :=
-=========================
-
-- Provide an overview of each of the classes in your code, and what their
-  function is in the overall game.
+##Implementation
 
 InstructionPanel: This class holds the JPanel pop-up window that appears when the game is first instantiated.
 
@@ -42,25 +30,9 @@ GameWon: This is a pop up window that is displayed when a user has won the game.
 
 Run2048: This file runs the game by compiling each component into a JFrame, allowing for user interaction.
 
-
-- Were there any significant stumbling blocks while you were implementing your
-  game (related to your design, or otherwise)?
-
-I had trouble getting my JavaGUI JFrame to hold the JPanels in the correct layout and adjusting their size. I also found myself struggling to parse through the large class files in order to find where I placed my methods or where I was changing certain variables.
-
-
-- Evaluate your design. Is there a good separation of functionality? How well is
-  private state encapsulated? What would you refactor, if given the chance?
-
-I think I did a good job of separating the GUI from the logic of the game but I think in some places the logic of some methods are intertwined in places that did make it slightly harder to test. For instance, I had my addTile() function called for every move at first but this made testing difficult since a random tile was spawned for every move made. I separated these out as a result. The private state is encapsulated for certain variables but less so for others. If I were to refactor, I would create more copies of different fields to ensure encapsulation.
-
-
-
-========================
-=: External Resources :=
-========================
-
-- Cite any external resources (images, tutorials, etc.) that you may have used
-  while implementing your game.
+##External Resources
 
 None
+
+##Contact Information
+Created by Namita Sajai, 2021
